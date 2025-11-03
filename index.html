@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Boletins de Hora Automático - Tradsul</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+        <h1><img src="/img/azul Simbolo.png" alt="Logo Tradsul" class="logo">Gerador de Boletins de Horas</h1>
+
+        <!-- Formulário para Gerar Boletim (existente) -->
+        <form id="timesheetForm">
+            <div class="form-group">
+                <label for="processo">Nº Processo:</label>
+                <input type="text" id="processo" name="processo" required>
+            </div>
+            <div class="form-group">
+                <label for="dtInicial">Data e Hora Inicial:</label>
+                <input type="datetime-local" id="dtInicial" name="dtInicial" required>
+            </div>
+            <div class="form-group">
+                <label for="dtFinal">Data e Hora Final:</label>
+                <input type="datetime-local" id="dtFinal" name="dtFinal" required>
+            </div>
+            <button type="submit">Gerar Boletim</button>
+        </form>
+
+        <hr class="separator"> <!-- Adicionando um separador visual -->
+
+        <!-- Nova Seção de Importação -->
+        <div class="import-section">
+            <h2>Importar Atividades via Planilha</h2>
+            <p>Selecione um arquivo .xlsx com as atividades para carregar no sistema.</p>
+            <button id="importarBtn">Importar Planilha</button>
+            <!-- O input de arquivo real fica escondido por questões de estilo -->
+            <input type="file" id="fileInput" accept=".xlsx, .xls" style="display: none;">
+        </div>
+
+        <!-- Div de Mensagens (para ambos os formulários) -->
+        <div id="message" class="" style="display: none;"></div>
+    </div>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="/script/index.js"></script>
+
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="/script/index.js"></script>
+</body>
+</html> 
