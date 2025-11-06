@@ -29,7 +29,7 @@ document.getElementById('timesheetForm').addEventListener('submit', async functi
     const DtFinalISO = new Date(dtFinalValue).toISOString();
 
     const formData = {
-        processo: processo,
+        processo: processo.toUpperCase(),
         DtInicial: DtInicialISO,
         DtFinal: DtFinalISO,
     };
