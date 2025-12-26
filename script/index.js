@@ -35,7 +35,7 @@ document.getElementById('timesheetForm').addEventListener('submit', async functi
     };
     
     
-    const apiUrl = 'http://localhost:3000/ts/export'; 
+    const apiUrl = 'https://geradordebhapi.onrender.com/ts/export'; 
 
     try {
         const response = await fetch(apiUrl, {
@@ -132,7 +132,7 @@ fileInput.addEventListener('change', async (event) => {
 
     try {
         // >>> ATENÇÃO: Verifique se esta é a URL correta da nova rota no backend <<<
-        const response = await fetch('http://localhost:3000/ts/import', {
+        const response = await fetch('https://geradordebhapi.onrender.com/ts/import', {
             method: 'POST',
             body: formData,
         
@@ -157,4 +157,4 @@ fileInput.addEventListener('change', async (event) => {
         importarBtn.textContent = 'Importar Planilha';
         fileInput.value = ''; // Limpa o input de arquivo para permitir a seleção do mesmo arquivo novamente
     }
-}); 
+});
