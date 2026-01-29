@@ -35,7 +35,7 @@ document.getElementById('timesheetForm').addEventListener('submit', async functi
     };
     
     
-    const apiUrl = 'https://geradordebhapi.onrender.com/ts/export'; 
+    const apiUrl = 'https://geradordebh-nxnd.onrender.com/ts/export'; 
 
     try {
         const response = await fetch(apiUrl, {
@@ -132,7 +132,7 @@ fileInput.addEventListener('change', async (event) => {
 
     try {
         // >>> ATENÇÃO: Verifique se esta é a URL correta da nova rota no backend <<<
-        const response = await fetch('https://geradordebhapi.onrender.com/ts/import', {
+        const response = await fetch('https://geradordebh-nxnd.onrender.com/ts/import', {
             method: 'POST',
             body: formData,
         
