@@ -30,7 +30,13 @@
         </form>
 
         <hr class="separator"> <!-- Adicionando um separador visual -->
+        <div class="import-container" style="margin-top: 15px;">
+    <input type="file" id="fileInput" accept=".xlsx, .xls, .csv" style="display: none;">
     
+    <button type="button" id="importarBtn" class="btn-importar">Importar Planilha</button>
+    
+    <div id="messageDiv" style="display: none; margin-top: 10px; text-align: center; font-weight: bold;"></div>
+</div>
         <!-- Div de Mensagens (para ambos os formulários) -->
         <div id="message" class="" style="display: none;"></div>
     </div>
